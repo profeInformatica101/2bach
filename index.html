@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2º Bachillerato TIC - Desarrollo de Software</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 70px;
+        }
+
+        .section-title {
+            margin-top: 30px;
+        }
+
+        .section-content {
+            padding: 15px;
+        }
+
+        .accordion-button {
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">2º Bachillerato TIC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#programacion">Programación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ingenieria">Ingeniería de Software</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Desarrollo de Software</h1>
+            <p class="lead">Explora los contenidos clave de Programación e Ingeniería de Software</p>
+        </div>
+    </header>
+
+<!-- Programación Section -->
+<section id="programacion" class="container section-title">
+    <h2 class="text-center">TICO.2.A.1. Programación en Python</h2>
+    <div class="accordion" id="accordionProgramacion">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse1" aria-expanded="true">
+                    TICO.2.A.1.1. Estructura de un programa informático y elementos básicos del lenguaje.
+                </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse show">
+                <div class="accordion-body section-content">
+                    <h5>Estructura de un programa en Python:</h5>
+                    <p>Un programa en Python típicamente sigue una estructura secuencial donde las instrucciones se
+                        ejecutan de arriba hacia abajo. Python es un lenguaje interpretado, lo que significa que
+                        cada línea de código se ejecuta en el orden en que aparece.</p>
+                    <p>Elementos básicos del lenguaje incluyen:</p>
+                    <ul>
+                        <li><strong>Comentarios:</strong> Se usan para documentar el código. Comienza con <code>#</code> para una sola línea o <code>''' '''</code> para bloques múltiples.</li>
+                        <li><strong>Variables:</strong> Almacenan valores. No se declaran tipos explícitamente. Ejemplo: <code>edad = 25</code></li>
+                        <li><strong>Expresiones:</strong> Combinación de operadores y operandos. Ejemplo: <code>3 + 4 * 2</code></li>
+                    </ul>
+                    <h6>Tipos de Lenguajes</h6>
+                    <p>Existen distintos tipos de lenguajes de programación:</p>
+                    <ul>
+                        <li><strong>Lenguajes de alto nivel:</strong> Python es un ejemplo. Fácil de leer, escribir y mantener.</li>
+                        <li><strong>Lenguajes de bajo nivel:</strong> Como el ensamblador, están más cerca del hardware.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse2">
+                    TICO.2.A.1.2. Fundamentos: tipos de datos, constantes, variables, operadores y expresiones.
+                </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse">
+                <div class="accordion-body section-content">
+                    <h5>Tipos de datos:</h5>
+                    <ul>
+                        <li><strong>int:</strong> Enteros. Ejemplo: <code>num = 5</code></li>
+                        <li><strong>float:</strong> Números con decimales. Ejemplo: <code>pi = 3.14</code></li>
+                        <li><strong>str:</strong> Cadenas de texto. Ejemplo: <code>nombre = "Juan"</code></li>
+                        <li><strong>bool:</strong> Valores booleanos. Ejemplo: <code>es_valido = True</code></li>
+                    </ul>
+                    <h5>Constantes y Variables:</h5>
+                    <p>En Python, las variables no necesitan declaración explícita de tipo. Las constantes no son
+                        estrictamente impuestas, pero se nombran en mayúsculas por convención. Ejemplo:
+                        <code>PI = 3.1416</code>.</p>
+                    <h5>Operadores:</h5>
+                    <p>Algunos ejemplos de operadores:</p>
+                    <ul>
+                        <li><strong>Aritméticos:</strong> <code>+, -, *, /, // (división entera), % (módulo)</code></li>
+                        <li><strong>Relacionales:</strong> <code>==, !=, >, <, >=, <=</code></li>
+                        <li><strong>Lógicos:</strong> <code>and, or, not</code></li>
+                    </ul>
+                    <h5>Entrada/Salida:</h5>
+                    <p>La función <code>input()</code> se usa para la entrada de datos. Ejemplo: <code>nombre = input("Introduce tu nombre: ")</code></p>
+                    <p>Para la salida de datos se utiliza <code>print()</code>. Ejemplo: <code>print("Hola, " + nombre)</code></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse3">
+                    TICO.2.A.1.3. Estructuras de control. Condicionales e iterativas.
+                </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse">
+                <div class="accordion-body section-content">
+                    <h5>Estructuras Condicionales:</h5>
+                    <p>Las estructuras condicionales permiten tomar decisiones en el programa. La estructura básica
+                        es:</p>
+                    <pre><code>if condicion:
+# Código si la condición es verdadera
+elif otra_condicion:
+# Código si la otra condición es verdadera
+else:
+# Código si ninguna condición es verdadera
+                    </code></pre>
+                    <h5>Estructuras Iterativas:</h5>
+                    <p>Se usan para ejecutar un bloque de código repetidamente. Ejemplos:</p>
+                    <pre><code># Bucle while
+while condicion:
+# Código a ejecutar mientras la condición sea verdadera
+
+# Bucle for
+for i in range(10):
+print(i)
+                    </code></pre>
+                    <p><strong>range()</strong> genera una secuencia de números, útil para contar iteraciones.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse4">
+                    TICO.2.A.1.4. Estructuras de datos.
+                </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse">
+                <div class="accordion-body section-content">
+                    <h5>Principales estructuras de datos en Python:</h5>
+                    <ul>
+                        <li><strong>Listas:</strong> Permiten almacenar múltiples elementos. Ejemplo: <code>mi_lista = [1, 2, 3, 4]</code></li>
+                        <li><strong>Tuplas:</strong> Son similares a las listas, pero inmutables. Ejemplo: <code>mi_tupla = (1, 2, 3)</code></li>
+                        <li><strong>Diccionarios:</strong> Almacenan pares clave-valor. Ejemplo: <code>mi_diccionario = {"nombre": "Juan", "edad": 25}</code></li>
+                        <li><strong>Conjuntos (Sets):</strong> Almacenan valores únicos y no ordenados. Ejemplo: <code>mi_set = {1, 2, 3}</code></li>
+                    </ul>
+                    <p>Las estructuras de datos son fundamentales para organizar y manipular grandes cantidades de
+                        información de manera eficiente.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<h1>Recursos</h1>
+<ul>
+<li><a href="recursos/Algoritmos (Secundaria)-1.pdf">Algoritmos</a></li>
+<li><a href="recursos/Python.pdf">Programación (Implementación de algoritmo con Python)</a></li>
+<!-- Footer -->
+<footer>
+    <p>© 2024 2º Bachillerato TIC - Programación en Python</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
