@@ -129,12 +129,14 @@
                             <th>#</th>
                             <th>Usuario de GitHub</th>
                             <th>Repositorio</th>
+                            <th>Info</th>
                         </tr>
                     </thead>
                     <tbody>
             `;
 
             for (const [index, alumno] of alumnosFiltrados.entries()) {
+                const info = alumno.info;
                 const usuario = alumno.github_user;
                 const existeRepositorio = await comprobarRepositorio(usuario);
                 const colorClase = existeRepositorio ? "status-green" : "status-red";
@@ -145,6 +147,7 @@
                         <td>${index + 1}</td>
                         <td><a href="https://github.com/${usuario}" target="_blank">${usuario}</a></td>
                         <td class="${colorClase}">${estado}</td>
+                        <td class="${colorClase}">${info}</td>
                     </tr>
                 `;
             }
