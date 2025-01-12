@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2º Bachillerato TIC - Desarrollo de Software</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 70px;
+        }
+
+        .section-title {
+            margin-top: 30px;
+        }
+
+        .section-content {
+            padding: 15px;
+        }
+
+        .accordion-button {
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 80vh;
+            /* Ocupa el 80% de la altura de la ventana */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        pre{
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">2º Bachillerato TIC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#examenes">Examenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#problemas">Problemas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQutytm_kwH1dQnIw-4rvVzGKjd-8L8iBeFrjy8geQ49p4gNXp7VznT5k5b4HmNItyoUeIsE6a4xPPJ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        
+            </div>
+    </header>
+
+<!-- 
+    <section id="examenes" class="container section-title">
+        <br><br>
+        <h2><i class="fa-regular fa-file"></i>Pruebas realizadas</h2>
+       
+    </section>
+-->
+
+
+
+
+    <section id="problemas" class="container section-title">
+<!--
+        <h2 class="text-center"><i class="fas fa-project-diagram"></i>Organización del Proyecto en GitHub</h2>
+        <p>Los alumnos deben crear un repositorio en GitHub para organizar sus ejercicios y proyectos, repositorio tiene que ser: <mark><strong><a
+                        href="entrega_ejercicio.html">ejercicios_de_clase</a></strong></mark></p>-->
+                        <h1><i class="fas fa-exclamation-circle"></i> Tareas:</h1>
+                        <ul>
+                            <li>
+                                Crea en GitHub un repositorio llamado: <mark><strong>mi_primera_web</strong></mark> que contenga un archivo <b>index.html</b> utilizando los siguientes elementos:
+                                <ol>
+                                    <li>
+                                        Seguir el estándar básico para la estructura de un archivo HTML:
+                                        <pre><code>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                            &lt;head&gt;
+                                &lt;title&gt;Mi Primera Web&lt;/title&gt;
+                                &lt;meta charset="UTF-8"&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                <!-- Contenido aquí -->
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                                        </code></pre>
+                                    </li>
+                                    <li>
+                                        Etiquetas obligatorias:
+                                        <ol>
+                                            <li><strong>Texto:</strong> <code>&lt;h1&gt;, &lt;p&gt;, &lt;br&gt;</code></li>
+                                            <li><strong>Formato de texto:</strong> <code>&lt;b&gt;, &lt;mark&gt;, &lt;i&gt;</code></li>
+                                            <li><strong>Listas:</strong> <code>&lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;</code></li>
+                                            <li><strong>Tablas:</strong> <code>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;</code></li>
+                                            <li><strong>Medios:</strong> <code>&lt;img&gt;, &lt;video&gt;</code></li>
+                                            <li><strong>Formularios:</strong> <code>&lt;form&gt;, &lt;input&gt;</code></li>
+                                            <li><strong>Separación de contenido:</strong> <code>&lt;div&gt;, &lt;span&gt;</code></li>
+                                            <li>
+                                                <strong>Metadatos:</strong> Etiquetas para mejorar la información de la página:
+                                                <ol>
+                                                    <li><code>&lt;title&gt;</code> - Título que aparece en la pestaña del navegador.</li>
+                                                    <li><code>&lt;meta charset="UTF-8"&gt;</code> - Codificación de caracteres.</li>
+                                                    <li><code>&lt;meta name="description" content="Descripción de la página"&gt;</code> - Mejora del SEO con una descripción breve.</li>
+                                                    <li><code>&lt;meta name="keywords" content="HTML, web, ejemplo"&gt;</code> - Palabras clave relacionadas con la página.</li>
+                                                    <li><code>&lt;meta name="author" content="Tu Nombre"&gt;</code> - Autor del contenido.</li>
+                                                    <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> - Responsividad para dispositivos móviles.</li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        Atributos esenciales:
+                                        <ol>
+                                            <li><strong>Fuente de medios:</strong> <code>src</code></li>
+                                            <li><strong>Hipervínculos:</strong> <code>href</code></li>
+                                            <li><strong>Identificación:</strong> <code>id (#)</code></li>
+                                            <li><strong>Clases:</strong> <code>class (.)</code></li>
+                                            <li><strong>Accesibilidad:</strong> <code>alt</code> para imágenes y <code>title</code> para descripciones.</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                        
+       
+</section>
+                        <section id="git"  class="container section-title">
+
+        <h1><i class="fab fa-github"></i>Tu cuenta GitHub</h1>
+        <p>Crea una cuenta en <a
+                href="https://github.com/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home">GitHub</a>
+            y comparte el usuario.</p>
+
+            <iframe src="repositorios.html" title="Repositorio de Alumnos"></iframe>
+        <blockquote>
+            <ul>
+
+                <li>
+
+                    <h3><code><a
+            href="https://profeinformatica101.github.io/redirect/formGitHubIESCAMAS.html"><mark>Enviar <span
+              style="text-decoration: underline;"><strong>usuario</strong> de
+              GitHub</span></mark></a></code></h3>
+                </li>
+
+                <li>
+
+
+                    <h3><code><a
+                href="repositorios.html"><mark>Cuentas de los compañeros de Github <span
+                  style="text-decoration: underline;"><strong>usuario</strong> de
+                  GitHub</span></mark></a></code></h3>
+                </li>
+            </ul>
+
+
+        </blockquote>
+
+
+        <h1><i class="fas fa-file"></i>Recursos</h1>
+        <ul>
+            <li><a href="https://www.w3schools.com">w3schools</a></li>
+
+        </ul>
+    </section>
+<section>
+    <div class="container mt-4">
+        <div class="accordion" id="accordionExample">
+            <!-- Desarrollo de Software -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingA">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseA" aria-expanded="false" aria-controls="collapseA">
+                        <i class="fas fa-laptop-code"></i> A. Desarrollo de Software
+                    </button>
+                </h2>
+                <div id="collapseA" class="accordion-collapse collapse show" aria-labelledby="headingA" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><i class="fas fa-code icon"></i> <strong>TICO.2.A.1. Programación</strong></li>
+                            <ul>
+                                <li><i class="fas fa-terminal icon"></i> TICO.2.A.1.1. Estructura de un programa informático y elementos básicos del lenguaje. Tipos de lenguajes.</li>
+                                <li><i class="fas fa-database icon"></i> TICO.2.A.1.2. Fundamentos: tipos de datos, constantes, variables, operadores y expresiones, entrada/salida y comentarios.</li>
+                                <li><i class="fas fa-random icon"></i> TICO.2.A.1.3. Estructuras de control. Condicionales e iterativas.</li>
+                                <li><i class="fas fa-box icon"></i> TICO.2.A.1.4. Estructuras de datos.</li>
+                                <li><i class="fas fa-cogs icon"></i> TICO.2.A.1.5. Funciones y bibliotecas de funciones. Reutilización de código.</li>
+                                <li><i class="fas fa-file-alt icon"></i> TICO.2.A.1.6. Manipulación de archivos.</li>
+                                <li><i class="fas fa-object-group icon"></i> TICO.2.A.1.7. Orientación a objetos: clases, objetos y constructores. Herencia. Bibliotecas de clases.</li>
+                            </ul>
+                            <li><i class="fas fa-project-diagram icon"></i> <strong>TICO.2.A.2. Ingeniería de Software</strong></li>
+                            <ul>
+                                <li><i class="fas fa-layer-group icon"></i> TICO.2.A.2.1. Metodologías de desarrollo.</li>
+                                <li><i class="fas fa-code-branch icon"></i> TICO.2.A.2.2. Entornos de desarrollo integrado.</li>
+                                <li><i class="fas fa-life-ring icon"></i> TICO.2.A.2.3. Ciclo de vida del software.</li>
+                                <li><i class="fas fa-edit icon"></i> TICO.2.A.2.4. Análisis, Diseño, Programación y Pruebas.</li>
+                                <li><i class="fas fa-code-branch icon"></i> TICO.2.A.2.5. Control de versiones.</li>
+                                <li><i class="fas fa-users icon"></i> TICO.2.A.2.6. Trabajo en equipo y mejora continua.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Publicación de Contenidos -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingB">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseB" aria-expanded="true" aria-controls="collapseB">
+                        <i class="fas fa-globe"></i> B. Publicación de Contenidos
+                    </button>
+                </h2>
+                <div id="collapseB" class="accordion-collapse collapse" aria-labelledby="headingB" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><i class="fas fa-desktop icon"></i> <strong>TICO.2.B.1. La Web</strong></li>
+                            <ul>
+                                <li><i class="fas fa-globe icon"></i> TICO.2.B.1.1. Características, funcionamiento y ejemplos.</li>
+                                <li><i class="fas fa-code icon"></i> TICO.2.B.1.2. Introducción al HTML y CSS.</li>
+                                <li><i class="fas fa-universal-access icon"></i> TICO.2.B.1.3. Accesibilidad y usabilidad.</li>
+                                <li><i class="fas fa-tools icon"></i> TICO.2.B.1.4. Herramientas de diseño y CMS.</li>
+                                <li><i class="fas fa-file-image icon"></i> TICO.2.B.1.5. Elaboración y difusión de contenidos multimedia.</li>
+                                <li><i class="fas fa-search icon"></i> TICO.2.B.1.6. Posicionamiento, analítica web y alojamiento.</li>
+                            </ul>
+                            <li><i class="fas fa-users icon"></i> <strong>TICO.2.B.2. Trabajo Colaborativo</strong></li>
+                            <ul>
+                                <li><i class="fas fa-tools icon"></i> TICO.2.B.2.1. Herramientas de productividad.</li>
+                                <li><i class="fas fa-comments icon"></i> TICO.2.B.2.2. Software de comunicación.</li>
+                                <li><i class="fas fa-folder-open icon"></i> TICO.2.B.2.3. Repositorios de archivos.</li>
+                                <li><i class="fas fa-file-powerpoint icon"></i> TICO.2.B.2.4. Producción de contenidos.</li>
+                                <li><i class="fas fa-tasks icon"></i> TICO.2.B.2.5. Gestión de tareas y proyectos.</li>
+                                <li><i class="fas fa-copyright icon"></i> TICO.2.B.2.6. Derechos de autor.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Seguridad Informática -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingC">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseC" aria-expanded="false" aria-controls="collapseC">
+                        <i class="fas fa-shield-alt"></i> C. Seguridad Informática
+                    </button>
+                </h2>
+                <div id="collapseC" class="accordion-collapse collapse" aria-labelledby="headingC" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><i class="fas fa-lock icon"></i> <strong>TICO.2.C.1. Ciberseguridad</strong></li>
+                            <ul>
+                                <li><i class="fas fa-user-secret icon"></i> TICO.2.C.1.1. Protección de la información: confidencialidad, integridad y disponibilidad.</li>
+                                <li><i class="fas fa-key icon"></i> TICO.2.C.1.2. Cifrado, certificados digitales y firma electrónica.</li>
+                                <li><i class="fas fa-shield-alt icon"></i> TICO.2.C.1.3. Medidas de seguridad básicas: contraseñas, actualizaciones, copias de seguridad e imágenes.</li>
+                                <li><i class="fas fa-exclamation-triangle icon"></i> TICO.2.C.1.4. Vulnerabilidades.</li>
+                                <li><i class="fas fa-bug icon"></i> TICO.2.C.1.5. Software malicioso.</li>
+                                <li><i class="fas fa-bolt icon"></i> TICO.2.C.1.6. Ataques.</li>
+                            </ul>
+                            <li><i class="fas fa-user-shield icon"></i> <strong>TICO.2.C.2. Privacidad y Uso Responsable</strong></li>
+                            <ul>
+                                <li><i class="fas fa-user-lock icon"></i> TICO.2.C.2.1. Datos personales.</li>
+                                <li><i class="fas fa-balance-scale icon"></i> TICO.2.C.2.2. Derechos digitales.</li>
+                                <li><i class="fas fa-bullhorn icon"></i> TICO.2.C.2.3. Ciberacoso.</li>
+                                <li><i class="fas fa-share-alt icon"></i> TICO.2.C.2.4. Redes sociales.</li>
+                                <li><i class="fas fa-thumbs-up icon"></i> TICO.2.C.2.5. Buenas prácticas.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 2º Bachillerato TIC - Programación en Python</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
