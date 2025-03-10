@@ -37,7 +37,7 @@
     {"id": 19, "github_user": "Leo-silva1707", "info": "RS, L"},
     {"id": 20, "github_user": "juandario69", "info": "MM, JD"},
     {"id": 21, "github_user": "david49siu", "info": "RB, D"},
-    {"id": 22, "github_user": "***********", "info": "GG, A"},
+   // {"id": 22, "github_user": "***********", "info": "GG, A"},
     {"id": 23, "github_user": "***********", "info": "LN, E"},
     {"id": 24, "github_user": "***********", "info": "ML,PM"}
 ]
@@ -52,6 +52,7 @@
                             <th>#</th>
                             <th>Usuario de GitHub</th>
                             <th><i class="fas fa-project-diagram"></i>ejercicios_de_clase</th>
+                            <th><i class="fas fa-project-diagram"></i>mi_primera_web</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -62,13 +63,16 @@
                 const usuario = alumno.github_user;
                 const info = alumno.info;
                 const enlaceGitHub = `https://github.com/${usuario}`;
+                const enlaceWebGitHub = `https://${usuario}.github.io`;
                 const enlaceEjerciciosClase = enlaceGitHub+`/ejercicios_de_clase`;
-
+                const enlaceEjerciciosmi_primera_web = enlaceWebGitHub+`/mi_primera_web`;
+       
                 tablaHTML += `
                     <tr>
                         <td>${index + 1}</td>
                         <td><a href="${enlaceGitHub}" target="_blank">${usuario}</a></td>
                         <td><a href="${enlaceEjerciciosClase}" target="_blank">${info}</a></td>
+                        <td><a href="${enlaceEjerciciosmi_primera_web}" target="_blank">☀️mi_primera_web🛠️ </a></td>
                     </tr>
                 `;
             });
